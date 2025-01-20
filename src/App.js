@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import cars from './cars';
 import About from './components/About';
 import Cards from './components/Cards';
 import Contact from './components/Contact';
@@ -7,11 +8,9 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import Modal from './components/Modal';
-import SmallFilter from './components/SmallFilter';
-import './output.css';
-import cars from './cars';
-import Testimonials from './components/Testimonials';
 import SectionHeading from './components/SectionHeading';
+import Testimonials from './components/Testimonials';
+import './output.css';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,7 +30,6 @@ function App() {
           Explore Our Collection
         </SectionHeading>
         <Filter cars={car} setCar={setCar} />
-        {/* <SmallFilter cars={car} setCar={setCar} /> */}
       </div>
       <hr className='w-11/12 mx-auto my-8' />
       <Cards cars={car} />
