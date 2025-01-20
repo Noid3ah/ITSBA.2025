@@ -1,4 +1,3 @@
-import { motion, AnimatePresence } from 'framer-motion';
 import Card from './Card';
 
 const Cards = ({ cars }) => {

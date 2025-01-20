@@ -1,4 +1,4 @@
-const SmallFilter = ({}) => {
+const SmallFilter = () => {
   return (
     <div className='contain md:hidden flex '>
       <div className='ml-auto border p-2 px-6 rounded-lg'>
