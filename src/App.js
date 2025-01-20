@@ -31,7 +31,7 @@ function App() {
           Explore Our Collection
         </SectionHeading>
         <Filter cars={car} setCar={setCar} />
-        <SmallFilter cars={car} setCar={setCar} />
+        {/* <SmallFilter cars={car} setCar={setCar} /> */}
       </div>
       <hr className='w-11/12 mx-auto my-8' />
       <Cards cars={car} />
