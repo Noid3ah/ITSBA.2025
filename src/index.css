@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --constraint-width: 1480px;
+  --constraint-width-percentage: 90%;
+  --header-height: 4rem;
+  --hero: 5rem;
+  --accent: #ffc30f;
+  --background: hsl(0, 0%, 98%);
+  --inter: 'Inter', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --section-bottom: 3rem;
+}
+
+/* @font-face {
+  font-family: 'Interfont';
+  src: url('./assets/fonts/inter-variablefont_opszwght.woff2') format('woff2'), url('./assets/fonts/inter-variablefont_opszwght.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+} */
+
+body {
+  font-family: var(--inter);
+  background-color: var(--background);
+}
+
+.header {
+  font-family: var(--poppins);
+}
+
+.contain {
+  width: var(--constraint-width-percentage);
+  max-width: var(--constraint-width);
+  margin-inline: auto;
+}
+
+.hero {
+  background-image: url('/public/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the backdrop */
+}
