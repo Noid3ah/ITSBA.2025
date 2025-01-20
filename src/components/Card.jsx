@@ -33,11 +33,9 @@ const Card = ({ car }) => {
           <span className='text-zinc-950/30 text-sm flex items-center gap-1'>
             <IoLocationSharp /> {car.location}
           </span>
-
-          {/* <div className='absolute -bottom-[1.08rem] -right-[1.08rem] h-16 w-[9.5rem] bg-[--background] border border-r-0 border-b-0 rounded-2xl -z-10 rounded-bl-none rounded-tr-none'></div> */}
         </div>
       </div>
-      <button className='bg-[--accent] text-zinc-950 text-sm font-bold px-6 py-2.5 rounded-lg absolute top-[60%] group-hover:top-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 flex items-center'>
+      <button className='bg-[--accent-dark] text-zinc-950 text-sm font-bold px-6 py-2.5 rounded-lg absolute top-[60%] group-hover:top-1/2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200 flex items-center hover:bg-[--accent]'>
         Book Now
         <IoArrowForward className='inline-block ml-2' />
       </button>

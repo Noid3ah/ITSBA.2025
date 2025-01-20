@@ -25,36 +25,39 @@ const SmallHeader = ({ onClick, isScrolled }) => {
           onClick={handleOpen}
         />
       </div>
-      {open && <Navbar onClick={onClick} />}
+      {open && <Navbar onClick={onClick} setOpen={setOpen} />}
     </header>
   );
 };
 
-function Navbar({ onClick }) {
+function Navbar({ onClick, setOpen }) {
   return (
     <nav
       className={`absolute top-[--header-height] right-1 bg-[#0C101C] text-white rounded-xl p-6 w-1/2 `}
     >
       <ul className='flex flex-col gap-2 text-base'>
         <li className='hover:bg-zinc-700 cursor-pointer p-4 rounded-lg'>
-          <a href='#about' cla>
+          <a href='#about' onClick={() => setOpen(false)}>
             About
           </a>
         </li>
         <li className='hover:bg-zinc-700 cursor-pointer p-4 rounded-lg'>
-          <a href='#vehicles' cla>
+          <a href='#vehicles' onClick={() => setOpen(false)}>
             Vehicles
           </a>
         </li>
         <li className='hover:bg-zinc-700 cursor-pointer p-4 rounded-lg'>
-          <a href='#contact' cla>
+          <a href='#contact' onClick={() => setOpen(false)}>
             Contact
           </a>
         </li>
       </ul>
       <Button
         className={`bg-white text-zinc-950 mt-8 w-full`}
-        onClick={onClick}
+        onClick={() => {
+          onClick();
+          setOpen(false);
+        }}
       >
         Create Account
       </Button>

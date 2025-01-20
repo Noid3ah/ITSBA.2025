@@ -2,7 +2,7 @@ import StarRating from './StarRating';
 
 const Testimonial = ({ name, img, review, rating }) => {
   return (
-    <div className='select-none flex flex-col gap-4 bg-white p-10 rounded-3xl shadow-md'>
+    <div className='select-none flex flex-col gap-4 bg-white p-10 rounded-3xl  border'>
       <span className='text-blue-400 [--size:3.5rem] mb-8'>
         <svg
           className='w-[--size] h-[--size]'
@@ -42,7 +42,7 @@ const Testimonial = ({ name, img, review, rating }) => {
             alt=''
           />
           <div className='flex flex-col'>
-            <span className='font-semibold'>{name}</span>
+            <span className='font-semibold text-lg'>{name}</span>
             <span className='text-xs text-gray-400'>Customer</span>
           </div>
         </div>

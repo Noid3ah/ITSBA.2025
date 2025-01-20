@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: 'John Doe',
+    name: 'Jane Doe',
     img: '/images/female2.svg',
     rating: 4.5,
     review:

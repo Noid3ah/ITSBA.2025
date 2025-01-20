@@ -27,7 +27,7 @@ const Modal = ({ isOpen, closeModal }) => {
       onClose={handleClose} // Ensure closeModal is called on dialog close
     >
       <div className='flex-1 flex justify-center items-center min-h-[200px]'>
-        <p>Feature not available. 😛</p>
+        <p className='text-zinc-950/70'>Feature not available. 😛</p>
       </div>
       <hr className='w-full mx-auto border-zinc-950/10 mb-6' />
       <Button className={`h-14`} onClick={handleClose}>

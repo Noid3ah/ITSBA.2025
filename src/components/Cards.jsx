@@ -1,3 +1,4 @@
+import { IoArrowForward } from 'react-icons/io5';
 import Card from './Card';
 
 const Cards = ({ cars }) => {
@@ -8,8 +9,11 @@ const Cards = ({ cars }) => {
           <Card key={index} car={car} />
         ))}
       </div>
-      <button className='bg-slate-950 text-white text-lg py-2.5 rounded-full mt-8 px-10 mx-auto block opacity-70 cursor-not-allowed'>
-        All Cars
+      <button
+        className='bg-slate-950 text-white text-base py-2.5 rounded-full mt-8 px-10 mx-auto   cursor-not-allowed flex items-center gap-2'
+        disabled
+      >
+        All Collections <IoArrowForward />
       </button>
     </section>
   );
