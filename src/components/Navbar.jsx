@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = ({ isScrolled }) => {
   return (
     <nav>
@@ -7,13 +9,13 @@ const Navbar = ({ isScrolled }) => {
         }  flex gap-10 text-sm `}
       >
         <li className='hover:text-white'>
-          <a href='#about'>About</a>
+          <Link to='/about'>About</Link>
         </li>
         <li className='hover:text-white'>
           <a href='#vehicles'>Vehicles</a>
         </li>
         <li className='hover:text-white'>
-          <a href='#contact'>Contact</a>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
     </nav>
