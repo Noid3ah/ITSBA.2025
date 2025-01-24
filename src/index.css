@@ -19,11 +19,18 @@ html {
 :root {
   --constraint-width: 1480px;
   --constraint-width-percentage: 90%;
-  --header-height: 4rem;
+  --header-height: 3rem;
   --hero: 5rem;
   --accent: #ffc30f;
   --accent-dark: hsl(45, 100%, 43%);
   --background: hsl(0, 0%, 98%);
+  --black: hsl(0, 0%, 9%);
+  --coal: hsl(0 0% 12%);
+  --cta: #ff5733;
+  --ring: hsl(0 0% 100% / 0.1);
+  --dark-gray: hsl(0, 0%, 15%);
+  --gray: #f1f1f1;
+
   --inter: 'Inter', sans-serif;
   --poppins: 'Poppins', sans-serif;
   --section-bottom: 3rem;

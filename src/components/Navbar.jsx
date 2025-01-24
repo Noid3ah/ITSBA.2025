@@ -9,6 +9,9 @@ const Navbar = ({ isScrolled }) => {
         }  flex gap-10 text-sm `}
       >
         <li className='hover:text-white'>
+          <Link to='/'>Home</Link>
+        </li>
+        <li className='hover:text-white'>
           <Link to='/about'>About</Link>
         </li>
         <li className='hover:text-white'>

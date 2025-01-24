@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import cars from './cars';
 import About from './components/About';
+import CallToAction from './components/CallToAction';
 import Cards from './components/Cards';
 import Contact from './components/Contact';
 import Filter from './components/Filter';
-import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import Modal from './components/Modal';
@@ -43,7 +43,7 @@ function App() {
                   <hr className='w-11/12 mx-auto my-8' />
                   <Cards cars={car} />
                   <Testimonials />
-                  <Footer />
+                  <CallToAction />
                 </>
               }
             />
