@@ -1,10 +1,10 @@
 import SectionHeading from './SectionHeading';
 const About = () => {
   return (
-    <section className='contain mb-[--section-bottom]' id='about'>
+    <section className='contain mb-[--section-bottom] mt-12' id='about'>
       <SectionHeading badge='About'>Discover Our Story</SectionHeading>
       <hr className='w-11/12 mx-auto my-8' />
-      <div className='rounded-3xl bg-[#192231] text-white py-32 px-8'>
+      <div className='rounded-3xl bg-[--black] text-white py-32 px-8'>
         <div className='contain flex flex-col items-center'>
           <h1 className='text-center text-4xl font-medium'>About Us</h1>
           <hr className='w-1/2 mx-auto my-8 border-white/10' />

@@ -30,7 +30,10 @@ const Modal = ({ isOpen, closeModal }) => {
         <p className='text-zinc-950/70'>Feature not available. 😛</p>
       </div>
       <hr className='w-full mx-auto border-zinc-950/10 mb-6' />
-      <Button className={`h-14`} onClick={handleClose}>
+      <Button
+        className={`h-14 border bg-slate-300 hover:bg-slate-400 hover:text-white`}
+        onClick={handleClose}
+      >
         Close
       </Button>
     </dialog>

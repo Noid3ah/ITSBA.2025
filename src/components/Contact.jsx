@@ -8,7 +8,7 @@ const Contact = ({ onClick }) => {
   }
 
   return (
-    <section className='contain mb-[--section-bottom]' id='contact'>
+    <section className='contain mb-[--section-bottom] mt-12' id='contact'>
       <SectionHeading badge='Contact'>Get In Touch</SectionHeading>
       <div className=''>
         <hr className='w-1/2 mx-auto my-8' />
@@ -23,7 +23,7 @@ const Contact = ({ onClick }) => {
                 First name
               </label>
               <input
-                className='border rounded-lg px-4 py-2 placeholder:text-sm'
+                className='border rounded-lg px-4 py-2 placeholder:text-sm h-14'
                 type='text'
                 id='name'
                 placeholder='John'
@@ -34,7 +34,7 @@ const Contact = ({ onClick }) => {
                 Last name
               </label>
               <input
-                className='border rounded-lg px-4 py-2 placeholder:text-sm'
+                className='border rounded-lg px-4 py-2 placeholder:text-sm h-14'
                 type='text'
                 id='lname'
                 placeholder='Doe'
@@ -45,7 +45,7 @@ const Contact = ({ onClick }) => {
                 Email
               </label>
               <input
-                className='border rounded-lg px-4 py-2 placeholder:text-sm'
+                className='border rounded-lg px-4 py-2 placeholder:text-sm h-14'
                 type='text'
                 id='email'
                 placeholder='email@example.com'
@@ -66,7 +66,7 @@ const Contact = ({ onClick }) => {
               Send Message
             </button>
           </form>
-          <div className='min-h-full min-w-[400px] bg-[#192231] p-4 py-8 rounded-2xl flex flex-col gap-4 justify-center items-center'>
+          <div className='min-h-full min-w-[400px] bg-[--black] p-4 py-8 rounded-2xl flex flex-col gap-4 justify-center items-center'>
             <span className='flex justify-center items-center'>
               <Logo />
             </span>
