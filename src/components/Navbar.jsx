@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ isScrolled }) => {
+const Navbar = ({ isScrolled, isHome }) => {
   return (
     <nav>
       <ul
@@ -15,7 +15,11 @@ const Navbar = ({ isScrolled }) => {
           <Link to='/about'>About</Link>
         </li>
         <li className='hover:text-white'>
-          <a href='#vehicles'>Vehicles</a>
+          {isHome ? (
+            <a href='#vehicles'>Vehicles</a>
+          ) : (
+            <Link to='/#vehicles'>Vehicles</Link>
+          )}
         </li>
         <li className='hover:text-white'>
           <Link to='/contact'>Contact</Link>

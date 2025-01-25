@@ -27,7 +27,7 @@ function App() {
       <div className='text-xl transition-all duration-300 ease-in-out'>
         {isModalOpen && <Modal isOpen={isModalOpen} closeModal={closeModal} />}
         <Routes>
-          <Route path='/' element={<Layout />}>
+          <Route path='/' element={<Layout onClick={openModal} />}>
             <Route
               path='/'
               element={
