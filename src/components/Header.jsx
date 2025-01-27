@@ -43,12 +43,12 @@ function Header({ onClick }) {
           }`}
         >
           <Logo />
-          <Navbar isScrolled={isScrolled} isHome={isHome} />
+          <Navbar isScrolled={isScrolled} isHome={isHome} location={location} />
           <Button
             className={`${
               isScrolled
-                ? 'bg-[hsl(240,4%,20%)] hover:bg-[hsl(240,4%,95%)] hover:text-[--black] text-white/80 py-1.5'
-                : 'hover:bg-[hsl(240,4%,25%)] border border-white/20 text-white/80'
+                ? 'hover:bg-[hsl(var(--accent-light))] hover:text-[--black] text-white/80 py-1.5 border-none'
+                : 'hover:text-[hsl(var(--accent-light))] text-white/80'
             }`}
             onClick={onClick}
             isScrolled={isScrolled}

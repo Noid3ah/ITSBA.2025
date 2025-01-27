@@ -21,12 +21,16 @@ html {
   --constraint-width-percentage: 90%;
   --header-height: 3rem;
   --hero: 5rem;
-  --accent: #ffc30f;
+  /* --accent: #ffc30f; */
+  --accent-clr: 92 67% 50%;
+  --accent-light: 92 67% 70%;
+  --accent: hsl(var(--accent-clr));
   --accent-dark: hsl(45, 100%, 43%);
   --background: hsl(0, 0%, 98%);
   --black: hsl(0, 0%, 9%);
   --coal: hsl(0 0% 12%);
   --cta: #ff5733;
+  --cta: #ffc107;
   --ring: hsl(0 0% 100% / 0.1);
   --dark-gray: hsl(0, 0%, 15%);
   --gray: #f1f1f1;
@@ -34,6 +38,9 @@ html {
   --inter: 'Inter', sans-serif;
   --poppins: 'Poppins', sans-serif;
   --section-bottom: 3rem;
+  --card-fs: 0.95rem;
+
+  --shadow: 0px 0px 8px rgb(0 0 0 / 1);
 }
 
 /* @font-face {
@@ -76,12 +83,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100%;
-  height: 100%; */
-  background-color: hsl(0, 0%, 9%, 0.5);
-  clip-path: polygon(0 75%, 50% 100%, 0 100%);
-  /* clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%); */
-  backdrop-filter: blur(1px);
+  width: 100%;
+  height: 100%;
+  /* background-color: hsl(0, 0%, 9%, 0.5); */
+  background: linear-gradient(
+    to bottom left,
+    hsl(0, 0%, 9%, 0.1) 20%,
+    hsl(0, 0%, 9%, 0.85)
+  );
 }
 
 .dialog::backdrop {
@@ -94,4 +103,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.card-text {
+  font-size: var(--card-fs);
+}
+
+.shad {
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 0.05);
 }

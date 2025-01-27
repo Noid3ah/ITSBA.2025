@@ -8,7 +8,7 @@ const CallToAction = () => {
         <p className='text-base text-white/60'>
           Your Ride Is Just A Click Away!
         </p>
-        <button className='bg-[--cta] text-base uppercase text-white px-8 py-4 font-bold font-[Poppins] rounded-lg flex items-center gap-2 mt-6'>
+        <button className='bg-[--cta] text-base uppercase text-[--black] px-8 py-4 font-bold font-[Poppins] rounded-lg flex items-center gap-2 mt-6'>
           Get Started
         </button>
 

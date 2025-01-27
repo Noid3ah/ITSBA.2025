@@ -1,6 +1,6 @@
 const Badge = ({ children }) => {
   return (
-    <span className='rounded-full text-xs px-3 py-1.5 absolute top-4 right-4 bg-white text-slate-950 border z-50'>
+    <span className='shad rounded-full text-[13px] font-medium shadow-[--shadow] px-3 py-1.5 bg-white text-zinc-950 z-50'>
       {children}
     </span>
   );
